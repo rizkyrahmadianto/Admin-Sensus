@@ -6,5 +6,5 @@
 5. Saya lebih menekankan pada pemahaman saya mengenai CodeIgniter dan query language yang mengunakan join table
 
 # Issues 1 14/07/2019
-a. I cannot use mode_rewrite to replace index.php which is make url shortly without index.php
-b. Searching and Pagination still sucks
+1. I cannot use mode_rewrite to replace index.php which is make url shortly without index.php
+2. Searching and Pagination still sucks
