@@ -1,4 +1,5 @@
 <?php  
+    defined('BASEPATH') OR exit('No direct script access allowed');
 	/**
 	 * summary
 	 */
@@ -10,10 +11,6 @@
 	    public function __construct()
 	    {
 	        parent::__construct();
-
-	        $this->load->library(array('pagination','form_validation'));
-            $this->load->helper(array('url','form'));
-            $this->load->model('Person_model');
 	    }
 
 	    public function index()

@@ -6,16 +6,11 @@
         public function __construct()
         {
             parent::__construct();
-
-            $this->load->library(array('pagination','form_validation'));
-            $this->load->helper(array('url','form'));
-            $this->load->model(array('Home_model','Profile_model'));
         } 
 
         public function index()
         {
             $info['judul'] = 'Halaman Home';
-            $info['user']  = $this->Profile_model->getUserSession();
 
             $config['base_url']     = base_url().'home/index';
             /*$config['total_rows']   = $this->db->count_all('person');*/

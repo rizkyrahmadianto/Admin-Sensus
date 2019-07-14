@@ -1,15 +1,11 @@
 <?php
     defined('BASEPATH') OR exit('No direct script access allowed');
 
-    class Region extends CI_COntroller
+    class Region extends CI_Controller
     {
         public function __construct()
         {
             parent::__construct();
-
-            $this->load->library(array('pagination','form_validation'));
-            $this->load->helper(array('url','form'));
-            $this->load->model('Region_model');
         }
 
         public function index()
@@ -17,7 +13,7 @@
             $info['judul']  = "Halaman Data Region";
             /*$info['region'] = $this->Region_model->getAllRegion();*/
             
-            $config['base_url']     = base_url().'region/index';
+            $config['base_url']     = base_url().'region';
             $config['total_rows']   = $this->db->count_all('regions');
             $config['per_page']     = 5;
             $config['uri_segment']  = 3;
